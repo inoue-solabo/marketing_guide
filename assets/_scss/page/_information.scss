@@ -1,0 +1,65 @@
+@use "../global/" as g;
+
+
+.p-information{
+  padding: 48px 16px;
+  width: 100%;
+  max-width: 1032px;
+  margin: 0 auto;
+  @include g.mq{
+    padding: 80px 16px;
+  }
+  &__content{
+    width: 100%;
+    &__row{
+      padding: 16px;
+      border-bottom: solid 2px g.$c_grey;
+      background-color: g.$c_white;
+      transition: 0.3s;
+      &:hover{
+        background-color: g.$c_grey;
+      }
+      @include g.mq{
+        padding: 24px;
+      }
+      @include g.mq_m{
+        padding: 32px 24px;
+      }
+      &-text{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        p{
+          &:nth-child(1){
+            span{
+              display: inline-block;
+              background-color: #EEEEEE;
+              padding: 8px;
+              border-radius: 4px;
+              color: g.$c_black;
+              font-size: 12px;
+            }
+          }
+          &:nth-child(2){
+            font-size: 12px;
+            color: g.$c_black3;
+            margin-left: 16px;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+          }
+        }
+      }
+      &-title{
+        color: g.$c_black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        @include g.mq{
+          font-size: 20px;
+        }
+        @include g.mq_m{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

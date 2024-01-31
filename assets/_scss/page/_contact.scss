@@ -1,0 +1,22 @@
+@use "../global/" as g;
+
+
+.p-contact{
+  padding: 48px 16px;
+  width: 100%;
+  max-width: 1032px;
+  margin: 0 auto;
+  @include g.mq{
+    padding: 80px 16px;
+  }
+  &__text{
+    margin-bottom: 16px;
+    text-align: center;
+    color: g.$c_black;
+    font-size: 16px;
+    line-height: 1.8;
+    span{
+      display: inline-block;
+    }
+  }
+}

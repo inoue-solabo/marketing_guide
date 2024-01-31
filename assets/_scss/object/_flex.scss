@@ -1,0 +1,28 @@
+@use "../global/" as g;
+
+.o-flex{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include g.mq_m{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__main{
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+    @include g.mq_m{
+      width: calc(100% - 340px);
+      margin-right: 40px;
+      margin-bottom: 0;
+
+    }
+  }
+  &__sidebar{
+    width: 100%;
+    @include g.mq_m{
+      width: 300px;
+    }
+  }
+}

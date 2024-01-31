@@ -1,0 +1,80 @@
+@use "../global/" as g;
+
+.l-nav{
+  background-color: rgb(26 26 26 /0.9);
+  border-radius: 24px 24px 0 0;
+  position: fixed;
+  bottom: -100%;
+  padding: 48px 0 8px;
+  transition: 0.8s;
+  z-index: 9999;
+  width: 100%;
+  &.is-open{
+    bottom: 0;
+  }
+  &__logo{
+    margin-bottom: 48px;
+    width: 190px;
+    padding: 0 24px;
+  }
+  &__list{
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    padding: 0 0 0 24px;
+    li{
+      margin-right: 16px;
+      margin-bottom: 32px;
+      a{
+        color: g.$c_white;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 8px 8px 8px;
+    a{
+      &:not(:last-child){
+        max-width: 155px;
+        width: 42%;
+        height: 68px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p:nth-child(1){
+          font-size: 14px;
+          line-height: 1;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        p:nth-child(2){
+          font-size: 12px;
+        }
+      }
+      &:nth-child(1){
+        background-color: #EE3E3E;
+        border: solid 1px #EE3E3E;
+        color: g.$c_white;
+      }
+      &:nth-child(2){
+        background-color: g.$c_white;
+        border: solid 1px g.$c_black;
+        color: g.$c_black;
+      }
+      &:last-child{
+        width: 48px;
+      }
+    }
+  }
+}

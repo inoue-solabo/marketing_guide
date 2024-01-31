@@ -1,0 +1,69 @@
+@use "../global/" as g;
+
+.o-bread_list{
+  padding: 12px 0 20px;
+  background-color: #FFE5E4;
+  @include g.mq{
+    padding: 28px 0 40px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 0;
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 8px;
+    margin: 0 auto;
+    @include g.mq{
+      gap: 16px 0;
+      width: 96%;
+      padding-top: 16px;
+    }
+    @include g.mq_l{
+      width: 100%;
+    }
+    li{
+      font-size: 12px;
+      position: relative;
+      line-height: 1.2;
+      color: g.$c_black;
+      @include g.mq_m{
+        font-size: 14px;
+      }
+      &:not(:last-child){
+        margin-right: 20px;
+        @include g.mq_m{
+          margin-right: 32px;
+        }
+        &:before{
+          content: "ｰ";
+          position: absolute;
+          color: #4D4D4D;
+          font-size: 10px;
+          right: -12px;
+          @include g.mq_m{
+            font-size: 14px;
+            right: -20px;
+          }
+        }
+      }
+      a{
+        color: #4D4D4D;
+        position: relative;
+        @include g.mq_m{
+          &:hover{
+            &:before{
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: -6px;
+              height: 1px;
+              background-color: #333;
+              animation: border_anim 0.3s linear forwards;
+            }
+          }
+        }
+      }
+    }
+  }
+}

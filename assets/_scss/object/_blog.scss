@@ -1,0 +1,169 @@
+@use "../global/" as g;
+
+.o-blog{
+  margin-bottom: 48px;
+  @include g.mq{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  &.is-slider{
+    margin-bottom: 0;
+  }
+  &.is-pickup{
+    margin-bottom: 0;
+    @include g.mq{
+      display: block;
+    }
+    @include g.mq_m{
+      display: flex;
+    }
+  }
+  &__detail{
+    margin-bottom: 32px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    .is-slider & {
+      @include g.mq_mm{
+        width: 400px;
+        margin-right: 25px;
+      }
+    }
+    .is-pickup & {
+      display: flex;
+      align-items: flex-start;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include g.mq{
+      width: 48.9%;
+      margin-bottom: 0;
+      &:not(:nth-last-child(-n+2)){
+        margin-bottom: 32px;
+        .is-slider & {
+          margin-bottom: 0;
+        }
+        .is-pickup & {
+          margin-bottom: 0;
+        }
+      }
+      .is-pickup & {
+        margin-bottom: 24px !important;
+        width: 100%;
+        &:last-child{
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    @include g.mq_m{
+      margin-bottom: 0;
+      .is-pickup & {
+        width: 32.36%;
+        margin-bottom: 0 !important;
+        display: block;
+      }
+    }
+    &__image{
+      &:hover{
+        cursor: pointer;
+      }
+      .is-pickup & {
+        width: 164px;
+        padding: 16px;
+        @include g.mq{
+          width: 45.29%;
+          padding: 0;
+        }
+        @include g.mq_m{
+          width: 100%;
+        }
+      }
+    }
+    &__inner{
+      padding: 28px 24px 32px;
+      .is-pickup & {
+        flex: 1;
+        padding: 12px 12px 12px 0;
+        @include g.mq{
+          padding: 24px 28px;
+        }
+      }
+    }
+    &__category{
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      .is-pickup & {
+        margin-bottom: 6px;
+        @include g.mq{
+          margin-bottom: 8px;
+        }
+      }
+      span{
+        font-size: 12px;
+        color: g.$c_white;
+        padding: 8px;
+        border-radius: 4px;
+        display: inline-block;
+        background-color: #EE3E3E;
+        font-weight: bold;
+        .is-pickup & {
+          font-size: 10px;
+          padding: 6px;
+          @include g.mq{
+            padding: 8px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__text{
+      display: flex;
+      align-items: center;
+      .is-pickup & {
+        display: block;
+        @include g.mq{
+          display: flex;
+        }
+      }
+      .date{
+        &:not(:last-child){
+          margin-right: 1em;
+        }
+        time{
+          font-size: 12px;
+          color: g.$c_black;;
+          display: inline-block;
+          .is-pickup & {
+            font-size: 10px;
+            @include g.mq{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    &__title{
+      font-size: 18px;
+      color: g.$c_black;
+      line-height: 1.8;
+      margin-bottom: 8px;
+      .is-pickup & {
+        font-size: 14px;
+        line-height: 1.6;
+        @include g.mq{
+          font-size: 18px;
+          line-height: 1.8;
+        }
+      }
+      .is-slider & {
+        font-weight: bold;
+      }
+      a{
+        color: g.$c_black;
+      }
+    }
+  }
+}

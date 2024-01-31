@@ -1,0 +1,70 @@
+@use "../global/" as g;
+
+.o-navigation{
+  width: 100%;
+  margin: 35px auto 0;
+  @include g.mq{
+    margin: 60px auto 0;
+  }
+  .wp-pagenavi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    .first{
+      position: absolute;
+      left: 0;
+      justify-content: flex-start;
+      font-size: 14px;
+      font-weight: 900;
+      border-radius: 50%;
+      @include g.mq{
+        font-size: 20px;
+      }
+    }
+    .last{
+      position: absolute;
+      right: 0;
+      justify-content: flex-end;
+      font-size: 14px;
+      font-weight: 900;
+      border-radius: 50%;
+      @include g.mq{
+        font-size: 20px;
+      }
+    }
+    a,span{
+      display: block;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #000;
+      border: solid 1px g.$c_black3;
+      font-weight: bold;
+      margin: 0 6px;
+      color: g.$c_black3;
+      transition: 0.3s;
+      border-radius: 50%;
+      &:hover{
+        color: g.$c_white;
+        background-color: g.$c_black3;
+        border: solid 1px g.$c_black3;
+        opacity: 1;
+      }
+      &.current{
+        color: g.$c_white;
+        background-color: g.$c_black3;
+        border: solid 1px g.$c_black3;
+      }
+      &.extend{
+        border: 0px;
+      }
+    }
+  }
+}

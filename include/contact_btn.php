@@ -1,0 +1,1 @@
+<a href="<?=home_url(); ?>/contact" class="o-btn is-single is-download">お問い合わせはこちら</a>

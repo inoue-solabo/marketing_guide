@@ -1,0 +1,112 @@
+@use "../global/" as g;
+
+.o-title {
+  &.is-main{
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    @include g.mq{
+      margin: 0 auto 80px;
+      display: flex;
+      align-items: center;
+    }
+    h2{
+      @include g.mq{
+        width: 33%;
+        margin-right: 2%;
+      }
+      p{
+        &:nth-child(1){
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 16px;
+          @include g.mq{
+            font-size: 32px;
+          }
+          @include g.mq_m{
+            font-size: 40px;
+          }
+          span{
+            display: inline-block;
+            position: relative;
+            padding-left: 14px;
+            font-family: "termina", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            &:before{
+              content: "";
+              position: absolute;
+              background: linear-gradient(101deg, #FF6E7F -24.6%, #BFE9FF 95.76%);
+              width: 10px;
+              height: 10px;
+              top: 4px;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+              border-radius: 50%;
+            }
+          }
+        }
+        &:nth-child(2){
+          font-size: 12px;
+          color: g.$c_black3;
+          @include g.mq{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .text{
+      margin-top: 24px;
+      @include g.mq{
+        margin-top: 0;
+        width: 65%;
+      }
+      p{
+        &:nth-child(1){
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 1.6;
+          letter-spacing: 5%;
+          margin-bottom: 24px;
+          @include g.mq{
+            font-size: 28px;
+          }
+          @include g.mq_m{
+            font-size: 36px;
+          }
+          @include g.mq_mm{
+            font-size: 40px;
+          }
+          span{
+            display: inline-block;
+          }
+        }
+        &:nth-child(2){
+          font-size: 14px;
+          color: g.$c_black;
+          line-height: 1.6;
+          @include g.mq{
+            font-size: 16px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+  &.is-center{
+    h2{
+      text-align: center;
+      @include g.mq{
+        width: 100%;
+      }
+    }
+  }
+  &.is-mb40{
+    margin: 0 auto 40px;
+    @include g.mq{
+      margin: 0 auto 40px;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@use "../global/" as g;
+
+.l-footer{
+  width: 100%;
+  background-color: g.$c_black3;
+  padding: 48px 16px 120px;
+  position: relative;
+  z-index: 2;
+  @include g.mq{
+    padding: 48px 16px 40px;
+  }
+  &__inner{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  &__logo{
+    margin-bottom: 48px;
+  }
+  &__text{
+    color: g.$c_white;
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 5%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    @include g.mq{
+      margin-bottom: 64px;
+      font-size: 28px;
+    }
+    @include g.mq_m{
+      font-size: 32px;
+    }
+    span{
+      display: inline-block;
+    }
+  }
+  &__list{
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 32px;
+    border-bottom: solid 1px rgb(255 255 255 /.3);
+    @include g.mq{
+      display: flex;
+      margin-bottom: 16px;
+      padding-bottom: 80px;
+    }
+    &__service{
+      margin-bottom: 40px;
+      @include g.mq{
+        width: 66%;
+        margin-bottom: 0;
+      }
+      &-title{
+        margin-bottom: 32px;
+        text-align: left;
+        color: g.$c_white;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px 0;
+        @include g.mq_m{
+          justify-content: flex-start;
+        }
+        .parent{
+          width: 48%;
+          &.is-seo{
+            width: 100%;
+            @include g.mq{
+              width: 48%;
+            }
+          }
+          @include g.mq_m{
+            width: 33%;
+          }
+          a{
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: g.$c_white;
+            display: inline-block;
+            position: relative;
+            @include g.mq_m{
+              &:hover{
+                &:after{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -6px;
+                  height: 1px;
+                  background-color: g.$c_white;
+                  animation: border_anim 0.3s linear forwards;
+                }
+              }
+            }
+          }
+          .child{
+            display: block;
+            li{
+              a{
+                font-size: 14px;
+                position: relative;
+                padding-left: 14px;
+                &:before{
+                  content: "";
+                  position: absolute;
+                  width: 6px;
+                  height: 6px;
+                  background-color: g.$c_white;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+                  left: 0;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__other{
+      width: 50%;
+      @include g.mq{
+        width: 34%;
+      }
+      ul{
+        li{
+          &:not(:last-child){
+            margin-bottom: 40px;
+          }
+          a{
+            color: g.$c_white;
+            font-size: 16px;
+            position: relative;
+            font-weight: 500;
+            @include g.mq_m{
+              &:hover{
+                &:before{
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -6px;
+                  height: 1px;
+                  background-color: g.$c_white;
+                  animation: border_anim 0.3s linear forwards;
+                }
+              }
+            }
+          }
+          &.privacy{
+            @include g.mq_m{
+              position: absolute;
+              left: 0;
+              bottom: -36px;
+            }
+          }
+        }
+      }
+    }
+    &__sns{
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      display: flex;
+      gap: 0 8px;
+      @include g.mq{
+        bottom: 16px;
+      }
+    }
+  }
+  &__copyright{
+    text-align: center;
+    font-size: 12px;
+    color: g.$c_white;
+    @include g.mq{
+      font-size: 16px;
+      text-align: right;
+    }
+  }
+}

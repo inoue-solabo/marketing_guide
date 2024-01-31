@@ -1,0 +1,107 @@
+@use "../global/" as g;
+
+.o-btn {
+  &.is-fixed{
+    background-color: g.$c_white;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    bottom: -84px;
+    left: 0;
+    z-index: 9999;
+    padding: 8px;
+    &.UpMove{
+      animation: UpAnime 0.5s forwards;
+    }
+    &.DownMove{
+      animation: DownAnime 0.5s forwards;
+    }
+    @include g.mq{
+      display: none !important;
+    }
+    .inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 390px;
+      margin: 0 auto;
+      a{
+        width: 48%;
+        height: 68px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: g.$c_white;
+        p:nth-child(1){
+          font-size: 16px;
+          line-height: 1;
+          font-weight: bold;
+        }
+        &.is-max{
+          width: 100%;
+        }
+        &.contact{
+          background-color: g.$c_green;
+        }
+        &.download{
+          background-color: g.$c_blue;
+        }
+      }
+    }
+  }
+  &.is-single{
+    width: 100%;
+    max-width: 285px;
+    height: 56px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: g.$c_white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 auto;
+    @include g.mq{
+      max-width: 376px;
+      height: 62px;
+      font-size: 18px;
+    }
+    &:not(:last-child){
+      margin: 0 auto 32px;
+    }
+    &:hover{
+      opacity: 1;
+      &:before{
+        right: 8px;
+      }
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 7.88px;
+      height: 9.46px;
+      background-image: url(../images/common/yajirushi.svg);
+      background-size: 100% 100%;
+      right: 16px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: 0.3s;
+    }
+  }
+  &.is-contact{
+    background-color: g.$c_blue;
+  }
+  &.is-download{
+    background-color: g.$c_green;
+  }
+  &.is-pc_left{
+    @include g.mq{
+      margin: 0;
+    }
+  }
+}
