@@ -22,21 +22,17 @@
           </a>
         </div>
       </div>
-      <!-- <div class="o-cta__content__detail is-download">
+      <div class="o-cta__content__detail is-download">
         <div class="o-cta__content__detail-text">
-          <p>
-            <span>サービスごとに培ってきたノウハウを</span><br>
-            <span>今から役に立つ、特別資料にて公開</span>
-          </p>
-          <p><span>マーケティング戦略や施策事例の資料を</span><span>ご用意しています。</span><span>無料ですので、ぜひご活用ください。</span></p>
-          <a href="<?=home_url(); ?>/contact">
+          <p>ソラボが施策してきたLINEマーケティングの</span><span>最新活用方法を無料公開</span></p><p><span>独自ノウハウと推奨する拡張ツールを</span><span>詳細に解説した資料をご用意しました。</span><span>無料ですので、ぜひご活用ください。</span></p>
+          <a href="<?=home_url(); ?>/download">
             <span>
               <img src="<?= get_template_directory_uri(); ?>/assets/images/common/cta_logo02.svg" alt="ダウンロード">
             </span>
-            資料ダウンロード一覧
+            資料ダウンロードはこちら
           </a>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>

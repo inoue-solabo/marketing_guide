@@ -14,10 +14,10 @@
     }
   }
   &.is-single{
-    padding: 32px 16px;
+    padding: 16px 16px;
     margin-bottom: 32px;
     @include g.mq{
-      padding: 40px 16px;
+      padding: 16px 16px;
     }
   }
   &__inner{
@@ -29,21 +29,28 @@
     @include g.mq{
       display: flex;
       justify-content: center;
+      align-items: flex-end;
       gap: 0 3.64%;
     }
     &__detail{
       @include g.mq{
         width: 48.18%;
       }
-      &.is-max100{
-        @include g.mq{
-          width: 100%;
-        }
-      }
+      // &.is-max100{
+      //   @include g.mq{
+      //     width: 100%;
+      //   }
+      // }
       &.is-download{
-        margin-top: 100px;
+        margin-top: 18px;
         @include g.mq{
           margin-top: 0;
+        }
+        .o-cta__content__detail-title {
+          display: none;
+          @include g.mq{
+            display: block;
+          }
         }
       }
       &-title{
@@ -184,10 +191,10 @@
             transition: 0.3s;
           }
           .is-contact & {
-            background-color: g.$c_green;
+            background-color: g.$c_blue;
           }
           .is-download & {
-            background-color: g.$c_blue;
+            background-color: g.$c_green;
           }
           span{
             position: absolute;

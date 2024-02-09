@@ -24,9 +24,9 @@
           <li class="parent">
             <a href="<?=home_url(); ?>/line">LINE運用・配信代行</a>
             <ul class="child">
-              <li>
+              <!-- <li>
                 <a href="<?=home_url(); ?>/line/works">お客様事例</a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?=home_url(); ?>/line/magazine">記事一覧</a>
               </li>
@@ -35,9 +35,9 @@
           <li class="parent">
             <a href="<?=home_url(); ?>/advertise">広告運用</a>
             <ul class="child">
-              <li>
+              <!-- <li>
                 <a href="<?=home_url(); ?>/advertise/works">お客様事例</a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?=home_url(); ?>/advertise/magazine">記事一覧</a>
               </li>
@@ -46,9 +46,9 @@
           <li class="parent">
             <a href="<?=home_url(); ?>/creative">ホームページ制作</a>
             <ul class="child">
-              <li>
+              <!-- <li>
                 <a href="<?=home_url(); ?>/creative/works">お客様事例</a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?=home_url(); ?>/creative/magazine">記事一覧</a>
               </li>
@@ -57,9 +57,9 @@
           <li class="parent">
             <a href="<?=home_url(); ?>/media">メディア運用</a>
             <ul class="child">
-              <li>
+              <!-- <li>
                 <a href="<?=home_url(); ?>/media/works">お客様事例</a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?=home_url(); ?>/media/magazine">記事一覧</a>
               </li>
@@ -68,9 +68,9 @@
           <li class="parent is-seo">
             <a href="<?=home_url(); ?>/consulting">SEO・伴走コンサルティング</a>
             <ul class="child">
-              <li>
+              <!-- <li>
                 <a href="<?=home_url(); ?>/consulting/works">お客様事例</a>
-              </li>
+              </li> -->
               <li>
                 <a href="<?=home_url(); ?>/consulting/magazine">記事一覧</a>
               </li>

@@ -89,10 +89,10 @@
         transition: 0.3s;
       }
       &.is-contact{
-        background-color: g.$c_green;
+        background-color: g.$c_blue;
       }
       &.is-download{
-        background-color: g.$c_blue;
+        background-color: g.$c_green;
       }
       span{
         position: absolute;

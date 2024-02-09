@@ -193,15 +193,15 @@
               margin: 0 auto 16px;
             }
             a{
-              background-color: g.$c_blue;
-              border: solid 1px g.$c_blue;
+              background-color: g.$c_green;
+              border: solid 1px g.$c_green;
               &:hover{
-                color: g.$c_blue;
+                color: g.$c_green;
                 opacity: 1;
                 background-color: g.$c_white;
                 svg{
                   path{
-                    fill: g.$c_blue;
+                    fill: g.$c_green;
                   }
                 }
               }
@@ -218,15 +218,15 @@
               }
             }
             a{
-              background-color: g.$c_green;
-              border: solid 1px g.$c_green;
+              background-color: g.$c_blue;
+              border: solid 1px g.$c_blue;
               &:hover{
-                color: g.$c_green;
+                color: g.$c_blue;
                 opacity: 1;
                 background-color: g.$c_white;
                 svg{
                   path{
-                    fill: g.$c_green;
+                    fill: g.$c_blue;
                   }
                 }
               }

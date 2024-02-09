@@ -73,16 +73,15 @@
           お問い合わせをする
         </a>
       </div>
-      <!-- <div class="o-small_cta__detail is-download">
-        <p><span>サービスごとに培ってきたノウハウを</span><span>今から役に立つ、特別資料にて公開</span></p>
-        <p><span>マーケティング戦略や施策事例の資料を</span><span>ご用意しています。</span><span>無料ですので、ぜひご活用ください。</span></p>
-        <a href="<?=home_url(); ?>/contact" class="is-download">
+      <div class="o-small_cta__detail is-download">
+        <p>ソラボが施策してきたLINEマーケティングの</span><span>最新活用方法を無料公開</span></p><p><span>独自ノウハウと推奨する拡張ツールを</span><span>詳細に解説した資料をご用意しました。</span><span>無料ですので、ぜひご活用ください。</span></p>
+        <a href="<?=home_url(); ?>/download" class="is-download">
           <span>
             <img src="<?= get_template_directory_uri(); ?>/assets/images/common/cta_logo02.svg" alt="ダウンロードロゴ">
           </span>
-          資料ダウンロード一覧
+          資料ダウンロードはこちら
         </a>
-      </div> -->
+      </div>
     </div>
   </section>
   <section class="p-top__strengths">

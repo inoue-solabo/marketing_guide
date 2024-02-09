@@ -77,7 +77,7 @@
       </ul>
       <div class="l-sidebar__cta__btn">
         <div class="l-sidebar__cta__btn-flex">
-          <!-- <div class="detail is-download">
+          <div class="detail is-download">
             <p>
               <span>まずは資料ダウンロード！</span>
             </p>
@@ -90,7 +90,7 @@
               <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.097.415a.394.394 0 00-.243.364v3.152H1.126a.394.394 0 100 .788h4.728V7.87a.394.394 0 00.673.278l3.545-3.545a.394.394 0 000-.558L6.527.5a.394.394 0 00-.43-.085z" fill="#fff"/></svg>
               </span>
             </a>
-          </div> -->
+          </div>
           <div class="detail is-contact">
             <a href="<?=home_url(); ?>/contact">
               <span>
@@ -103,7 +103,7 @@
             </a>
           </div>
         </div>
-        <div class="l-sidebar__cta__btn-tel">
+        <!-- <div class="l-sidebar__cta__btn-tel">
           <a href="tel:0120356117">
             <span>
               <img src="<?= get_template_directory_uri(); ?>/assets/images/common/side_tel.svg" alt="電話ロゴ"/>
@@ -111,7 +111,7 @@
             <span>0120-356-117</span>
           </a>
           <p>受付時間 9:00-19:00 [ 土・日・祝日除く ]</p>
-      </div>
+      </div> -->
       </div>
     </div>
   </div>

@@ -68,7 +68,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
       <div class="l-header__list__contact">
         <a href="<?=home_url(); ?>/contact" class="contact">お問い合わせ</a>
-        <!-- <a href="<?=home_url(); ?>/download" class="download">資料DL</a> -->
+        <a href="<?=home_url(); ?>/download" class="download">資料DL</a>
       </div>
     </div>
   </div>
