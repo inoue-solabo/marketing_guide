@@ -1,6 +1,6 @@
 <aside class="l-sidebar">
   <div class="l-sidebar__banner">
-    <a href="https://s.lmes.jp/landing-qr/1657771313-XMzlbl6o?uLand=8HURrT" target="_blank" rel="noopener noreferrer">
+    <a href="https://cbgw.kuzen.io/line_auth/liff_fwd_to_login?sl=b63c5ca380" target="_blank" rel="noopener noreferrer">
       <picture>
         <source type="image/webp" srcset="<?= get_template_directory_uri(); ?>/assets/images/common/side_line.webp">
         <img src="<?= get_template_directory_uri(); ?>/assets/images/common/side_line.png" alt="no-image" class="line公式アカウント"/>
